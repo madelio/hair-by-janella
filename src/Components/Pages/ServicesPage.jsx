@@ -8,7 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { useNavigate } from 'react-router-dom';
 import { services } from '../../data';
 
-const Pricing = () => {
+const ServicesPage = () => {
     const navigate = useNavigate();
     return (
         <Stack alignItems='center' spacing={5} height="100%" justifyContent="center">
@@ -31,4 +31,4 @@ const Pricing = () => {
     )
 }
 
-export default Pricing;
+export default ServicesPage;

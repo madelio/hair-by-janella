@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { services } from '../../data';
-import BookingCard from '../ServiceDetails';
+import BookingCard from '../BookingCard';
 import { useParams } from 'react-router-dom';
 import { buildBookingURL } from '../../utils';
 
-const Service = () => {
+const BookingPage = () => {
     const { id} = useParams();
     const [ service ] = useState(() =>services.find(service => service.id === parseInt(id)));
     return (
@@ -31,4 +31,4 @@ const Service = () => {
     )
 }
 
-export default Service;
+export default BookingPage;

@@ -10,8 +10,6 @@ const LandingPage = () => {
 
     const navigate = useNavigate();
     return (
-    <Container sx={{ height: '100vh'}}>
-
         <Stack alignItems='center' justifyContent="space-around" height="100%">
             <Box>
                 <Typography variant="h1">Hair by</Typography>
@@ -22,9 +20,8 @@ const LandingPage = () => {
                 variant="outlined" 
                 onClick={() => navigate('/services')}
                 // onClick={() => setOpenBookingModal(true)}
-            >Book With Me</Button>
+            >Book Online</Button>
         </Stack>
-    </Container>
     )
 }
 

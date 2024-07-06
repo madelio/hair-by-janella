@@ -5,11 +5,11 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 // TODO: scrolling doesn't hightlight the bar
 const Navigation = () => {
-    const menuItems = ['Home', 'Services', 'Booking'];
+    const menuItems = [ ['Home', '/'], ['Services', '/services'], ['Booking', '/404']];
 
     return (
       <Breadcrumbs separator={<NavigateNextIcon fontSize='small'/>}>
-          {menuItems.map(m => <Link underline="hover" color="inherit">{m}</Link>)}
+          {menuItems.map(([ title, url]) => <Link underline="hover" color="inherit" href={url}>{title}</Link>)}
       </Breadcrumbs>
     )
 };

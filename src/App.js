@@ -5,6 +5,7 @@ import LandingPage from './Components/Pages/LandingPage';
 import Pricing from './Components/Pages/ServicesPage';
 import Service from './Components/Pages/BookingPage';
 import Stack from '@mui/material/Stack';
+import Container from '@mui/material/Container';
 
 
 const router = createBrowserRouter([
@@ -26,10 +27,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <Stack alignItems="center">
-        <Navigation/>
-        <RouterProvider router={router}/>
-      </Stack>
+      <Container sx={{ height: '100vh'}}>
+          <Navigation/>
+          <RouterProvider router={router}/>
+      </Container>
     </div>
   );
 }

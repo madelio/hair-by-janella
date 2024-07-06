@@ -27,9 +27,9 @@ const BookingCard = ({ title, duration, price, description, bookingRoute }) => {
 
             <Card variant="outlined">
                 <CardContent>
-                    <Typography><strong>{title}</strong></Typography>
-                    <Typography>{duration} minutes @ ${price}</Typography>
-                    <Typography>{description}</Typography>
+                    <Typography><strong>{title}</strong> - <em>${price}</em></Typography>
+                    {/* <Typography>{duration} minutes @ ${price}</Typography>
+                    <Typography>{description}</Typography> */}
                 </CardContent>
                 <CardActionArea>
                     <Button onClick={handleBookClick}>Book</Button>

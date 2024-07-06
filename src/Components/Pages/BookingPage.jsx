@@ -21,7 +21,7 @@ const Service = () => {
     const { id} = useParams();
     const [ service ] = useState(() =>services.find(service => service.id === parseInt(id)));
     return (
-        <Container sx={{ height: '100vh' }}>
+        <>
             <Typography variant="h1">{service?.name}</Typography>
             <Grid container spacing={1}>
                 {
@@ -38,7 +38,7 @@ const Service = () => {
                     ))
                 }
             </Grid>
-        </Container>
+        </>
     )
 }
 

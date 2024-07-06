@@ -5,12 +5,13 @@ import { services } from '../../data';
 import BookingCard from '../BookingCard';
 import { useParams } from 'react-router-dom';
 import { buildBookingURL } from '../../utils';
+import  Container from '@mui/material/Container';
 
 const BookingPage = () => {
     const { id} = useParams();
     const [ service ] = useState(() =>services.find(service => service.id === parseInt(id)));
     return (
-        <>
+        <Container sx={{ height: '100vh'}}>
             <Typography variant="h1">{service?.name}</Typography>
             <Grid container spacing={1}>
                 {
@@ -27,7 +28,7 @@ const BookingPage = () => {
                     ))
                 }
             </Grid>
-        </>
+        </Container>
     )
 }
 

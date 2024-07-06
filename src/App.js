@@ -27,10 +27,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <Container sx={{ height: '100vh'}}>
+        <Stack alignItems="center">
           <Navigation/>
           <RouterProvider router={router}/>
-      </Container>
+        </Stack>
     </div>
   );
 }

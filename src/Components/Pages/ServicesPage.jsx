@@ -11,23 +11,26 @@ import { services } from '../../data';
 const ServicesPage = () => {
     const navigate = useNavigate();
     return (
-        <Stack alignItems='center' spacing={5} height="100%" justifyContent="center">
-            <Typography variant="h1">Choose Your Service</Typography>
-            <Stack direction="row" spacing={1} sx={{ width: '100%' }} justifyContent="center">
-                {
-                    services.map(({ name, id }) => (
+        <Container sx={{ height: '100vh'}}>
+            <Stack alignItems='center' spacing={5} height="100%" justifyContent="center">
+                <Typography variant="h1">Choose Your Service</Typography>
+                <Stack direction="row" spacing={1} sx={{ width: '100%' }} justifyContent="center">
+                    {
+                        services.map(({ name, id }) => (
 
-                        <Card sx={{ width: '250px', height: '250px' }}>
-                            <CardHeader
-                                title={name}
-                            />
-                            <CardMedia />
-                            <Button variant="contained" onClick={() => navigate(`/services/${id}`)}>Select</Button>
-                        </Card>
-                    ))
-                }
+                            <Card sx={{ width: '250px', height: '250px' }}>
+                                <CardHeader
+                                    title={name}
+                                />
+                                <CardMedia />
+                                <Button variant="contained" onClick={() => navigate(`/services/${id}`)}>Select</Button>
+                            </Card>
+                        ))
+                    }
+                </Stack>
             </Stack>
-        </Stack>
+
+        </Container>
     )
 }
 

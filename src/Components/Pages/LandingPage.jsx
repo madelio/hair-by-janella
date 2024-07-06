@@ -10,18 +10,20 @@ const LandingPage = () => {
 
     const navigate = useNavigate();
     return (
-        <Stack alignItems='center' justifyContent="space-around" height="100%">
-            <Box>
-                <Typography variant="h1">Hair by</Typography>
-                <Typography variant="h1">Janella</Typography>
-                <Typography variant="body">Stylist & Makeup Artist</Typography>
-            </Box>
-            <Button 
-                variant="outlined" 
-                onClick={() => navigate('/services')}
-                // onClick={() => setOpenBookingModal(true)}
-            >Book Online</Button>
-        </Stack>
+        <Container sx={{ height: '100vh'}}>
+            <Stack alignItems='center' justifyContent="space-around" height="100%">
+                <Box>
+                    <Typography variant="h1">Hair by</Typography>
+                    <Typography variant="h1">Janella</Typography>
+                    <Typography variant="body">Stylist & Makeup Artist</Typography>
+                </Box>
+                <Button 
+                    variant="outlined" 
+                    onClick={() => navigate('/services')}
+                    // onClick={() => setOpenBookingModal(true)}
+                >Book Online</Button>
+            </Stack>
+        </Container>
     )
 }
 

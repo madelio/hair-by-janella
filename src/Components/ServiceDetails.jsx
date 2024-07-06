@@ -5,10 +5,9 @@ import CardContent from '@mui/material/CardContent';
 import CardActionArea from '@mui/material/CardActionArea';
 import Typography from '@mui/material/Typography';
 import { PopupModal } from 'react-calendly';
-import { CALENDLY_BASE } from '../constants';
 
 // TODO: create a util for the minutes section
-const BookingCard = ({ title, duration, price, description, bookingRoute }) => {
+const BookingCard = ({ title, duration, price, description, bookingUrl }) => {
     const [open, setOpen] = useState(false);
     const handleModalClose = () => {
         setOpen(false);
@@ -19,7 +18,7 @@ const BookingCard = ({ title, duration, price, description, bookingRoute }) => {
     return (
         <>
             <PopupModal
-                url={`${CALENDLY_BASE}${bookingRoute}`}
+                url={bookingUrl}
                 rootElement={document.getElementById("root")}
                 open={open}
                 onModalClose={handleModalClose}

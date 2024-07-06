@@ -88,7 +88,6 @@ export const services = [
     {
         id: 3,
         name: 'Hair Cuts',
-        baseRoute: 'hair-cut-all/?a2=',
         options: [
             {
                 title: 'Cut & Style',
@@ -102,28 +101,24 @@ export const services = [
                 // durationInMinutes: 30,
                 price: 13,
                 // description: 'Revitalize your hair with our Basic Conditioning Treatment, designed to restore moisture and strength to your locks. This service begins with a gentle shampoo to cleanse your hair, followed by the application of a deep-conditioning mask tailored to your hair type. You\'ll enjoy a relaxing scalp massage to enhance circulation and promote overall hair health. Finished with a rinse and a blow-dry, this treatment leaves your hair feeling silky-smooth and nourished.',
-                route: 'Blow%20Dry%20&%20Style'
             },
             {
                 title: 'Fringe',
                 // durationInMinutes: 30,
                 price: 8,
                 // description: 'Revitalize your hair with our Basic Conditioning Treatment, designed to restore moisture and strength to your locks. This service begins with a gentle shampoo to cleanse your hair, followed by the application of a deep-conditioning mask tailored to your hair type. You\'ll enjoy a relaxing scalp massage to enhance circulation and promote overall hair health. Finished with a rinse and a blow-dry, this treatment leaves your hair feeling silky-smooth and nourished.',
-                route: 'Blow%20Dry%20&%20Style'
             },
             {
                 title: 'Head Shave',
                 // durationInMinutes: 30,
                 price: 19,
                 // description: 'Revitalize your hair with our Basic Conditioning Treatment, designed to restore moisture and strength to your locks. This service begins with a gentle shampoo to cleanse your hair, followed by the application of a deep-conditioning mask tailored to your hair type. You\'ll enjoy a relaxing scalp massage to enhance circulation and promote overall hair health. Finished with a rinse and a blow-dry, this treatment leaves your hair feeling silky-smooth and nourished.',
-                route: 'Blow%20Dry%20&%20Style'
             },
             {
                 title: 'Beard & Mustache Groom',
                 // durationInMinutes: 30,
                 price: 11,
                 // description: 'Revitalize your hair with our Basic Conditioning Treatment, designed to restore moisture and strength to your locks. This service begins with a gentle shampoo to cleanse your hair, followed by the application of a deep-conditioning mask tailored to your hair type. You\'ll enjoy a relaxing scalp massage to enhance circulation and promote overall hair health. Finished with a rinse and a blow-dry, this treatment leaves your hair feeling silky-smooth and nourished.',
-                route: 'Blow%20Dry%20&%20Style'
             },
         ]
     }, 
